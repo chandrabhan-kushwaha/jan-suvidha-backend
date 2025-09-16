@@ -9,7 +9,7 @@ const complaintRoutes = require('./api/routes/complaints');
 const authRoutes = require('./api/routes/auth'); // Added this line for Auth Route
 
 const app = express();
-
+app.set("trust proxy", 1);
 // --- Core Middleware ---
 
 // Enable Cross-Origin Resource Sharing for the frontend
